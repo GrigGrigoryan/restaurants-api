@@ -129,7 +129,6 @@ class User {
         const token = jwt.sign({data: user.user_id}, jwt_key, {expiresIn: '1h'});
         await db.User.update({token}, {where: {user_id: user.user_id}, transaction});
 
-        console.log(isUserSuperAdmin);
         // Initializing user roles and permissions
         if (isUserSuperAdmin) {
           const createRole = await db.User_Role.create({
@@ -184,7 +183,6 @@ class User {
           user
         })
       } catch(e) {
-        console.log(e);
         await transaction.rollback();
         next(e);
       }

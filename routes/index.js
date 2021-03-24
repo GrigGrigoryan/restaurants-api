@@ -81,7 +81,6 @@ class Index {
         }, {transaction});
 
         const user = createUser.get({plain: true});
-        console.log('user', user);
 
         const token = jwt.sign({data: user.user_id}, jwt_key, {expiresIn: '1h'});
         await db.User.update({token}, {where: {user_id: user.user_id}, transaction});

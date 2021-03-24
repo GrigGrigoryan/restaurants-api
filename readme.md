@@ -4,7 +4,7 @@
 * Run `npm install`
 * Migrate database using command. `sequelize-cli db:migrate`
 * Run server with `npm start` or `npm run dev`
-* create super_admin user.
+* Create super_admin user.
 #####
 #### `/users`
 POST
@@ -50,7 +50,7 @@ GET
 * Filter `/meals?type=&name=&description=&price=`
 * Sort `/meals?type_sort=&name_sort=&description_sort=&price_sort=`
 ####
-use `ASD` and `DESC` to sort them by Ascending or descending order
+use `ASC` and `DESC` to sort them by Ascending or descending order
 ####
 POST 
 * `headers: {authorization: "Bearer <YOUR TOKEN>"}`
@@ -72,10 +72,10 @@ DELETE
 #### `/restaurants`
 GET 
 * `headers: {authorization: "Bearer <YOUR TOKEN>"}`
-* Querying `/restaurants?name=&meals_type=`
+* Filter `/restaurants?name=&meals_type=`
 * Sort `/restaurants?name_sort=&meals_type_sort=`
 ####
-use `ASD` and `DESC` to sort them by Ascending or descending order
+use `ASC` and `DESC` to sort them by Ascending or descending order
 ####
 POST 
 * `headers: {authorization: "Bearer <YOUR TOKEN>"}`

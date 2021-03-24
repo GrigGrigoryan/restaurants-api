@@ -45,7 +45,6 @@ class Role {
 
     async getRoles (req, res, next) {
         try {
-            console.log('req', req);
             const query = req.query;
             const where = {};
             query.name_like && (where["name"] = {[Op.like]: name});

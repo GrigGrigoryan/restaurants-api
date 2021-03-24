@@ -4,7 +4,6 @@ const jwt_key = process.env.JWT_SECRET;
 const AppError = require('../core/AppError');
 
 const tokenValidator = async (req, res, next) => {
-    console.log('tokenValidator');
     let userToken = req.headers.authorization;
     let userSecret = req.headers.user_secret;
 

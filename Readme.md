@@ -2,7 +2,7 @@
 
 * Before get started create `.env` file by `.env.example`
 * Run `npm install`
-* Migrate database using command. `sequelize-cli db:migrate`
+* Migrate database using command. `sequelize db:migrate`
 * Run server with `npm start` or `npm run dev`
 * Create super_admin user.
 * Create roles and permissions.

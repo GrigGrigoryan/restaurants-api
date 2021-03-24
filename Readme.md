@@ -5,11 +5,21 @@
 * Migrate database using command. `sequelize-cli db:migrate`
 * Run server with `npm start` or `npm run dev`
 * Create super_admin user.
+* Create roles and permissions.
 #####
 #### `/users`
 POST
 * `headers: {user_secret}`
 * `body: {first_name, last_name, email, password, repeat_password}`
+###
+
+#### `/roles`
+POST
+* `headers: {user_secret}`
+###
+#### `/permissions`
+POST
+* `headers: {user_secret}`
 ###
 
 # What has been done 
